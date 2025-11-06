@@ -84,14 +84,22 @@ section h3 {
   position: relative;
   padding: 3px 0;
   color: #555;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.activity-card ul li::before {
-  content: "•";
-  color: #1a237e;
-  font-weight: bold;
-  position: absolute;
-  left: -15px;
+.activity-card .delete-participant {
+  color: #dc3545;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.activity-card .delete-participant:hover {
+  background-color: rgba(220, 53, 69, 0.1);
 }
 
 .activity-card .participants-section {
